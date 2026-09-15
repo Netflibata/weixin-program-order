@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/admin/admin",
+    "pages/orderList/orderList",
+    "pages/dishUpload/dishUpload",
+    "pages/dishEdit/dishEdit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6700",
+    "navigationBarTitleText": "云开发点餐小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#ff6700",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "菜品菜单"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/admin/admin",
+        "text": "管理员"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,36 @@
+<view class="container">
+  <view class="dish-manage-title text-center">菜品管理</view>
+  <view wx:if="{{dishList.length === 0}}" class="empty text-center mt-20">暂无菜品，请先上传菜品</view>
+  <view wx:for="{{dishList}}" wx:key="_id" class="dish-admin-item">
+    <view class="dish-admin-info">
+      <text class="d-name">{{item.name}}</text>
+      <text class="d-cate">分类：{{item.category}}</text>
+      <text class="d-price">¥{{item.price}}</text>
+
+    </view>
+    <view class="dish-btn-group">
+      <button size="mini" bindtap="goEditDish" data-id="{{item._id}}">编辑</button>
+      <button size="mini" type="warn" bindtap="delDish" data-id="{{item._id}}" data-img="{{item.img}}">删除菜品</button>
+    </view>
+  </view>
+
+  <view class="upload-btn-wrap text-center mt-40">
+    <button class="btn" bindtap="goUpload">上传新菜品</button>
+  </view>
+
+  <view class="order-title text-center mt-60">全部订单（可删除）</view>
+  <view wx:if="{{orderArr.length === 0}}" class="empty text-center mt-20">暂无订单</view>
+  <view wx:for="{{orderArr}}" wx:key="timestamp" class="order-item">
+    <view class="order-header">
+      <text>订单号：{{item.timestamp}}</text>
+      <text>下单时间：{{item.createTime}}</text>
+      <text>总价：¥{{item.totalPrice}}</text>
+    </view>
+    <view class="order-dishes">
+      <view wx:for="{{item.dishList}}" wx:key="_id">
+        {{item.name}} × {{item.num}}  ¥{{item.price * item.num}}
+      </view>
+    </view>
+    <button size="mini" type="warn" bindtap="deleteOrder" data-id="{{item._id}}">删除该订单</button>
+  </view>
+</view>

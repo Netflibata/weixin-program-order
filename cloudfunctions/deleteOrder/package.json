@@ -1,0 +1,6 @@
+{
+  "name": "deleteOrder",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

@@ -1,0 +1,19 @@
+page {
+  background-color: #f5f5f5;
+  font-family: "微软雅黑", sans-serif;
+}
+.container {
+  padding: 15rpx;
+}
+.btn {
+  background-color: #ff6700;
+  color: white;
+  border-radius: 8rpx;
+  border: none;
+}
+.text-center {
+  text-align: center;
+}
+.mt-20 {
+  margin-top: 20rpx;
+}

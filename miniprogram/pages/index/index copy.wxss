@@ -1,0 +1,78 @@
+page{
+  background:#f7f7f7;
+  height:100%;
+}
+.wrap{
+  display:flex;
+  height:100vh;
+}
+/* 左侧分类 */
+.left-cate{
+  width:160rpx;
+  background:#fff;
+}
+.cate-item{
+  padding:32rpx 10rpx;
+  text-align:center;
+  font-size:28rpx;
+  color:#666;
+}
+.cate-item.active{
+  background:#ff6700;
+  color:#fff;
+}
+/* 右侧菜品 */
+.right-dish{
+  flex:1;
+  padding:20rpx;
+  overflow-y:auto;
+}
+.no-dish{
+  text-align:center;
+  color:#999;
+  font-size:28rpx;
+  margin-top:100rpx;
+}
+.dish-item{
+  display:flex;
+  align-items:center;
+  background:#fff;
+  border-radius:12rpx;
+  padding:20rpx;
+  margin-bottom:20rpx;
+}
+.dish-img{
+  width:120rpx;
+  height:120rpx;
+  border-radius:8rpx;
+  margin-right:20rpx;
+}
+.dish-text{
+  flex:1;
+}
+.name{
+  display:block;
+  font-size:32rpx;
+  color:#222;
+}
+.cate-tag{
+  display:block;
+  font-size:24rpx;
+  color:#999;
+  margin:6rpx 0;
+}
+.price{
+  font-size:28rpx;
+  color:#ff6700;
+}
+.cart-btn{
+  width:120rpx;
+  height:64rpx;
+  font-size:24rpx;
+}
+.btn{
+  background-color:#ff6700;
+  color:#fff;
+  border:none;
+  border-radius:8rpx;
+}

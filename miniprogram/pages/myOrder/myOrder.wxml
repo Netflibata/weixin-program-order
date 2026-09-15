@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="title">全部订单</view>
+  <view wx:if="{{orderArr.length === 0}}" class="empty">暂无订单记录</view>
+  <view wx:for="{{orderArr}}" wx:key="timestamp" class="order-item">
+    <view class="order-header">
+      <text>订单号：{{item.timestamp}}</text>
+      <text>下单时间：{{item.createTime}}</text>
+      <text>总价：¥{{item.totalPrice}}</text>
+    </view>
+    <view class="order-dishes">
+      <view wx:for="{{item.dishList}}" wx:key="_id">
+        {{item.name}} × {{item.num}}  ¥{{item.price * item.num}}
+      </view>
+    </view>
+    <!-- 当前用户和订单创建人一致，显示删除按钮 -->
+    <block wx:if="{{currentOpenid === item.openid}}">
+      <button size="mini" type="warn" bindtap="deleteMyOrder" data-id="{{item._id}}">删除我的订单</button>
+    </block>
+    <block wx:else>
+      <text class="tip-text">他人订单，不可删除</text>
+    </block>
+  </view>
+</view>

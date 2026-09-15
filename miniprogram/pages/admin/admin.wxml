@@ -1,0 +1,5 @@
+<view class="container admin-box">
+  <view class="title">管理员登录</view>
+  <input class="pwd-input" placeholder="输入管理员密码" password bindinput="inputPwd" value="{{pwd}}" />
+  <button class="btn login-btn" bindtap="login">登录后台</button>
+</view>

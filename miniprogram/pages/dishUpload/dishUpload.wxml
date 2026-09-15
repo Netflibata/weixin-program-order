@@ -1,0 +1,12 @@
+<view class="container upload-box">
+  <view class="title">上传新菜品</view>
+  <view class="img-wrap" bindtap="chooseImg">
+    <image wx:if="{{imgUrl}}" src="{{imgUrl}}" class="preview-img"></image>
+    <view wx:else class="tip">点击选择菜品图片</view>
+  </view>
+  <input class="input-item" placeholder="输入菜品名称" bindinput="inputName" value="{{name}}"/>
+  <!-- 新增分类输入框 -->
+  <input class="input-item" placeholder="输入菜品分类，例：水产海鲜、热菜、凉菜" bindinput="inputCategory" value="{{category}}"/>
+  <input class="input-item" placeholder="输入菜品价格" type="number" bindinput="inputPrice" value="{{price}}"/>
+  <button class="btn submit-btn" bindtap="uploadDish">提交菜品到云端</button>
+</view>

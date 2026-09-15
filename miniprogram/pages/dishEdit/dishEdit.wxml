@@ -1,0 +1,12 @@
+<view class="container upload-box">
+  <view class="title">编辑菜品</view>
+  <view class="img-wrap" bindtap="chooseImage">
+    <image wx:if="{{previewImg}}" src="{{previewImg}}" class="preview-img"></image>
+    <view wx:else class="tip">点击更换菜品图片</view>
+  </view>
+  <input class="input-item" placeholder="菜品名称" bindinput="inputName" value="{{dishName}}"/>
+  <!-- 分类编辑框 -->
+  <input class="input-item" placeholder="菜品分类" bindinput="inputCategory" value="{{category}}"/>
+  <input class="input-item" placeholder="菜品价格" type="number" bindinput="inputPrice" value="{{dishPrice}}"/>
+  <button class="btn submit-btn" bindtap="saveEdit">保存修改并上传云端</button>
+</view>

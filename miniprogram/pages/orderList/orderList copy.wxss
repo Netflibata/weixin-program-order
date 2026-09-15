@@ -1,0 +1,82 @@
+.dish-manage-title {
+  font-size: 36rpx;
+  color: #ff6700;
+  margin-bottom: 30rpx;
+}
+.dish-admin-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  margin-bottom: 15rpx;
+}
+.dish-admin-info {
+  flex: 1;
+}
+.d-name {
+  font-size: 30rpx;
+  color: #333;
+  display: block;
+}
+.d-price {
+  font-size: 26rpx;
+  color: #ff6700;
+}
+.dish-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+.upload-btn-wrap {
+  margin-bottom: 40rpx;
+}
+.order-title {
+  font-size: 36rpx;
+  color: #ff6700;
+  margin-bottom: 30rpx;
+}
+.empty {
+  color: #999;
+  font-size: 28rpx;
+}
+.order-item {
+  background: white;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+.order-header {
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+.order-header text {
+  display: block;
+  font-size: 26rpx;
+  color: #666;
+  margin: 5rpx 0;
+}
+.order-dishes {
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+}
+.text-center {
+  text-align: center;
+}
+.mt-20 {
+  margin-top: 20rpx;
+}
+.mt-40 {
+  margin-top: 40rpx;
+}
+.mt-60 {
+  margin-top: 60rpx;
+}
+.btn {
+  background-color: #ff6700;
+  color: white;
+  border-radius: 8rpx;
+  border: none;
+}
